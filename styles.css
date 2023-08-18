@@ -1,0 +1,182 @@
+*
+{
+    box-sizing:border-box ;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'REM', sans-serif;
+}
+html
+{
+    font-size: 100%;
+}
+.title
+{
+    font-size: 3em;
+    color: #8738f6aa;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.504);
+    font-weight: 600;
+}
+.dall-e
+{
+    background-image: url('final_moon_train.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+        overflow-y: auto;
+    top:0;
+    left:0;
+    background-repeat: no-repeat;
+    padding-top: 25vh;
+}
+.new
+{
+    font-size: 6rem;
+}
+.form-div
+{
+    width: 100%;
+}
+.form-image
+{
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.inp-img
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 1%;
+    font-size: 1.2em;
+}
+.form-sub
+{
+    height: 30px;
+    padding: 0 0.5em;
+    position: absolute;
+    right:12px;
+    color: #00A676;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.form-sub:disabled
+{
+    color: #00a67796;
+}
+.image-sec
+{
+    margin:100px 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.img-under-grid
+{
+      display: grid;
+     grid-template-columns:repeat(2,512px);
+         gap:10px;
+}
+.image-size
+{
+    background-color: #cac8c8;
+    width:512px;
+    height: 512px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #8738f6aa;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  display: none;
+}
+.Error
+{
+text-align: center;
+font-size: 1.3em;
+font-weight: 900;
+color: #ff0000;
+text-shadow: 2px 2px 13px black;
+display: none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@media (max-width:1368px) and (min-width:768px)
+{
+
+    html
+    {
+        font-size: 90%;
+    }
+    .form-image
+{
+    position: relative;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.img-under-grid
+{
+     grid-template-columns:repeat(2,256px);
+         gap:7px;
+}
+.image-size
+{
+    width:256px;
+    height: 256px;
+}
+}
+@media (max-width:768px)
+{
+      html
+    {
+        font-size: 80%;
+    }
+        .form-image
+{
+    position: relative;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.img-under-grid
+{
+     grid-template-columns:repeat(2,45vw);
+         gap:7px;
+}
+.image-size
+{
+    width:45vw;
+    height: 45vw;
+}
+}
