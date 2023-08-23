@@ -118,8 +118,70 @@ color: #ff0000;
 text-shadow: 2px 2px 13px black;
 display: none;
 }
+.fullview
+{
+    position: fixed;
+    z-index: 4;
+    background-color: #5268e384;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.container-full
+{
+    width: 45vw;
+    height: 45vw;
+   position: relative;
+}
+.imgview
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-/* Safari */
+.download
+{
+     position: absolute;
+    color: #fffbfbb4;
+    background-color: transparent;
+    border: none;
+    bottom:2%;
+    right: 2%;
+    font-size: 1.2em;
+}
+#close
+{
+     position: absolute;
+    color: #fffbfbb4;
+    font-size: 2em;
+    background-color: transparent;
+    border: none;
+    top:2px;
+    right:10px;
+}
+.author
+{
+position: absolute;
+bottom: 10px;
+left: 10px;
+display: flex;
+align-items: center;
+}
+.author img
+{
+    width: 40px;
+    height: 40px;
+}
+.author p
+{
+    font-size: 1.3em;
+    margin-left: 5px;
+    color: #fffbfbb4;
+}
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
@@ -154,6 +216,11 @@ display: none;
     width:256px;
     height: 256px;
 }
+.container-full
+{
+    width: 55vw;
+    height: 55vw;
+}
 }
 @media (max-width:768px)
 {
@@ -178,5 +245,11 @@ display: none;
 {
     width:45vw;
     height: 45vw;
+}
+.container-full
+{
+    width: 98vw;
+    height: 98vw;
+    
 }
 }
